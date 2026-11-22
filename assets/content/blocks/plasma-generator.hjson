@@ -1,1 +1,34 @@
+// 1. Declare at the top of your class:
+// public static Block customCrafter;
 
+// 2. Put inside loadContent():
+customCrafter = new GenericCrafter("custom-crafter") {{
+    localizedName = "Custom Crafter";
+    description = "Crafts items or liquids using power and resources.";
+    size = 2; // 2x2 tiles (64x64 sprite)
+    hasPower = true;
+    hasItems = true;
+    hasLiquids = true;
+    itemCapacity = 20;
+    liquidCapacity = 40f;
+    craftTime = 60f; // 60 ticks = 1 second per craft
+
+    // Output (use outputItem, outputLiquid, or both)
+    outputItem = new ItemStack(Items.surgeAlloy, 2);
+    // outputLiquid = new LiquidStack(overdriveCoolant, 0.2f);
+
+    // Build cost
+    requirements(Category.crafting, ItemStack.with(
+        Items.copper, 80,
+        Items.lead, 60,
+        Items.silicon, 40
+    ));
+
+    // Inputs consumed to run
+    consumePower(2f); // 2.0 * 60 = 120 power/sec
+    consumeItems(ItemStack.with(
+        Items.titanium, 2,
+        Items.silicon, 1
+    ));
+    consumeLiquid(Liquids.water, 0.2f); // 0.2 * 60 = 12 liquid/sec
+}};

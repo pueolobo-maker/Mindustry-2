@@ -1,6 +1,9 @@
 name: "Plasma"
-description: "Superheated ionized gas contained in magnetic cells."
+description: "Superheated ionized gas contained in magnetic cells. Volatile and highly charged."
 color: "79f2ff"
 cost: 2.0
-charge: 1.0
+charge: 1.5
+explosiveness: 0.4
+flammability: 0.2
+radioactivity: 0
 research: "titanium"

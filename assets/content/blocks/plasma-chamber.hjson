@@ -1,6 +1,6 @@
 type: GenericCrafter
 name: "Plasma Chamber"
-description: "Creates plasma from air and energy."
+description: "Creates plasma from gas and energy."
 size: 2
 hasPower: true
 hasItems: true

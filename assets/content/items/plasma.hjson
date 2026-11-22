@@ -1,1 +1,6 @@
-
+name: "Plasma"
+description: "Superheated ionized gas contained in magnetic cells."
+color: "79f2ff"
+cost: 2.0
+charge: 1.0
+research: "titanium"

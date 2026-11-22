@@ -1,19 +1,24 @@
 type: NuclearReactor
 name: "Plasma Generator"
-description: "Uses plasma and thorium to generate nuclear power."
+description: "Uses plasma, thorium, and cryofluid to generate nuclear power. Overheats and explodes if coolant runs dry."
 size: 3
 hasPower: true
 hasItems: true
-itemCapacity: 20
+hasLiquids: true
+itemCapacity: 30
+liquidCapacity: 30
 itemDuration: 300
 powerProduction: 30.0
-generateEffect: "generatespark"
+fuelItem: "thorium"
+coolantPower: 0.5
+heating: 0.02
 consumes: {
-  liquids: [
-  cryofluid/0.1
+  liquid: {
+    liquid: "cryofluid"
+    amount: 0.1
+  }
   items: [
     plasma/5
-    thorium/5
   ]
 }
 requirements: [

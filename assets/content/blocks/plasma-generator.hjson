@@ -1,21 +1,28 @@
-type: GenericCrafter
-name: "Plasma generator"
+type: NuclearReactor
+name: "Plasma Generator"
 description: "Uses plasma and thorium to generate nuclear power."
-size: 2
+size: 3
 hasPower: true
 hasItems: true
 itemCapacity: 20
-craftTime: 60
-outputItem: "plasma/1"
+itemDuration: 300
+powerProduction: 30.0
+generateEffect: "generatespark"
 consumes: {
-  power: 4.0
+  liquids: [
+  cryofluid/0.1
+  items: [
+    plasma/5
+    thorium/5
+  ]
 }
 requirements: [
   copper/650
   lead/300
-  silicon/75
+  silicon/35
   titanium/275
   graphite/120
+  metaglass/30
 ]
-category: crafting
-research: "cultivator"
+category: power
+research: "thorium-reactor"

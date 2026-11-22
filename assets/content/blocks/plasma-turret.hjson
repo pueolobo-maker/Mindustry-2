@@ -1,0 +1,51 @@
+type: ItemTurret
+name: "Plasma Turret"
+description: "Fires high-velocity bolts of superheated plasma at enemy targets."
+size: 3
+health: 1600
+range: 240
+reload: 20
+recoil: 2
+rotateSpeed: 5
+inaccuracy: 2
+shootSound: "laser"
+targetAir: true
+targetGround: true
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.2
+}
+ammoTypes: {
+  plasma: {
+    type: BasicBulletType
+    speed: 8
+    lifetime: 32
+    damage: 85
+    splashDamage: 35
+    splashDamageRadius: 24
+    width: 10
+    height: 16
+    frontColor: "ffffff"
+    backColor: "79f2ff"
+    trailColor: "79f2ff"
+    trailWidth: 2
+    trailLength: 8
+    lightning: 2
+    lightningDamage: 18
+    lightningLength: 6
+    lightningColor: "79f2ff"
+    status: "shocked"
+    statusDuration: 60
+  }
+}
+requirements: [
+  copper/300
+  lead/200
+  graphite/120
+  silicon/100
+  titanium/120
+]
+category: turret
+research: "lancer"

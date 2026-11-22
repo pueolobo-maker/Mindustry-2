@@ -27,15 +27,15 @@ ammoTypes: {
     splashDamageRadius: 24
     width: 10
     height: 16
-    frontColor: "ffffff"
-    backColor: "79f2ff"
-    trailColor: "79f2ff"
+    frontColor: "ff85dc"
+    backColor: "ff14b8"
+    trailColor: "ff14b8"
     trailWidth: 2
     trailLength: 8
     lightning: 2
     lightningDamage: 18
     lightningLength: 6
-    lightningColor: "79f2ff"
+    lightningColor: "ff14b8"
     status: "shocked"
     statusDuration: 60
   }

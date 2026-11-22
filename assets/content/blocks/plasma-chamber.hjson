@@ -11,9 +11,11 @@ consumes: {
   power: 4.0
 }
 requirements: [
-  copper/80
-  lead/60
-  silicon/40
+  copper/650
+  lead/300
+  silicon/75
+  titanium/275
+  thoruim/35
 ]
 category: crafting
 research: "silicon-smelter"

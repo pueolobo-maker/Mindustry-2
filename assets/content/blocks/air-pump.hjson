@@ -1,2 +1,22 @@
-name:"Air Pump"
-description:"A mechanical pump that extracts atmospheric gas from Serpulo's atmosphere."
+type: SolidPump
+name: "Atmospheric Collector"
+description: "Compresses ambient Serpulo air into usable gas."
+size: 2
+hasPower: true
+hasLiquids: true
+liquidCapacity: 40
+pumpAmount: 0.25
+result: "serpulo-air"
+baseEfficiency: 1.0
+rotateSpeed: 2.5
+consumes: {
+  power: 1.5
+}
+requirements: [
+  copper/60
+  lead/50
+  silicon/30
+  metaglass/25
+]
+category: production
+research: "water-extractor"

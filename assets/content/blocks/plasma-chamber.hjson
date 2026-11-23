@@ -4,11 +4,17 @@ description: "Creates plasma from gas and energy."
 size: 2
 hasPower: true
 hasItems: true
+hasLiquids: true
+liquidCapacity: 30
 itemCapacity: 20
 craftTime: 60
 outputItem: "plasma/1"
 consumes: {
   power: 4.0
+  liquid: {
+    liquid: "compressed-gas"
+    amount: 0.25
+  }
 }
 requirements: [
   copper/650

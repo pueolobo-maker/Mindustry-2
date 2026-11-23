@@ -1,1 +1,11 @@
-
+name: "Compressed Air"
+description: "Atmospheric gas collected from Serpulo's atmosphere."
+gas: true
+color: "b8d8e8"
+barColor: "b8d8e8"
+lightColor: "b8d8e840"
+flammability: 0.0
+explosiveness: 0.0
+heatCapacity: 0.1
+viscosity: 0.05
+research: "titanium"

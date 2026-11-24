@@ -6,7 +6,7 @@ hasPower: true
 hasLiquids: true
 liquidCapacity: 40
 pumpAmount: 0.25
-result: "serpulo-air"
+result: "compressed-air"
 baseEfficiency: 1.0
 rotateSpeed: 2.5
 consumes: {

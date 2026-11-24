@@ -12,7 +12,7 @@ outputItem: "plasma/1"
 consumes: {
   power: 4.0
   liquid: {
-    liquid: "compressed-gas"
+    liquid: "compressed-air"
     amount: 0.25
   }
 }
